@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IEE1100-labs</title>
+  </head>
+  <body>
+
+    <style>
+      table {
+        border: 1px solid black;
+        border-spacing: 0px;
+      }
+    
+      td {
+        border: 1px solid black;
+        padding: 4px;
+      }
+    </style>
+      <h1>Arvutivõrgud Labor 1 Mobiilside juurdepääsuvõrk aruanne</h1>
+    
+      <table>
+        <tbody>
+          <tr>
+            <td>Töö tegijate nimed:</td>
+          </tr>
+          <tr>
+            <td>Tristan Krass</td>
+          </tr>
+          <tr>
+            <td>Katarina Kala</td>
+          </tr>
+          <tr>
+            <td>Töö tegemise kuupäev: Fri May 3 10:54:18 2019</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    
+    
+      <h2>2. Tutvumine rakendusega</h2>
+    
+      <div>
+        <p style="color: orange">
+          Süsteemiinfo (System info/Feedback)
+        </p>
+        <img src="assets/sysinfo.jpg?raw=true" alt="Süsteemiinfo"
+          width="200px">
+      </div>
+      <p>
+      </p>
+      <h3>2.2 GAUGE</h3>
+      <table>
+        <tr>
+          <th>Tehnoloogia</th>
+          <th>Kuvatõmmis tehnoloogiast</th>
+        </tr>
+        <tr>
+          <td>4G</td>
+          <td><img src="assets/gaug4G.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+          <td>3G</td>
+          <td><img src="assets/Gauge3G.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+          <td>2G</td>
+          <td><img src="assets/Gauge2G.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+        </tr>
+      </table>
+      <p>Küsimus 1. GAUGE: Mida signaalitugevuse näit näitab, kuidas seda mõõdetakse ja milleks seda tulemust mobiilsides
+        kasutatakse? Signaalitugevuse näit näitab, kui hea ühendus on telefoni ja tugijaama vahel (kui hea levi sul on).
+        Signaalitugevust mõõdetakse tugijaamades dBm-ides. Tulemust kasutatakse selleks, et kasutajal oleks alati
+        võimalikult hea levi (et tal oleks parim signaal) ehk kui mõnes tugijaamas on parem signaal, siis on kasutaja
+        telefonil alati võimalus ennast sinna ümber lülitada. </p>
+      <p>Küsimus 2. GAUGE: Millist signaalitugevuse väärtuste vahemikku peetakse heaks, millist rahuldavaks ja millest
+        allapoole ei mõõdeta? 2G (EDGE): &gt;= -90 dBm - väga hea, -103 dBm kuni -90 dBm - hea, -107 dBm kuni -103 dBm -
+        halb, &lt;= -108 dBm ei mõõdeta, 3G (HSPA+): &gt;= -90 dBm - väga hea, -104 dBm kuni -90 dBm- hea, -107 dBm kuni
+        -104 dBm - halb, &lt;= -108 dBm ei mõõdeta, 4G (LTE): &gt;= -98 dBm - väga hea, -118 dBm kuni -98 dBm - hea,
+        -128
+        dBm kuni -118 dBm - halb, &lt;= -129 dBm ei mõõdeta</p>
+      <p>Küsimus 3. GAUGE: Millist informatsiooni saab teada sellest mõõteaknast veel (ühe-kahe lausega)? Mõõteaknast saab
+        veel infot mobiilside teenusepakkuja kohta, võrgutüübi kohta, ühendust tagava tugijaama kohta, kõige tugevama
+        signaaliga tugijaama signaalitugevuse kohta ja teenuse oleku kohta (S- Service Status, D- Mobile Data, R-
+        Roaming).</p>
+      <h3>2.3 RAW</h3>
+    
+      <table>
+        <tr>
+          <th>Tehnoloogia</th>
+          <th>Kuvatõmmis tehnoloogiast</th>
+        </tr>
+        <tr>
+          <td>4G</td>
+          <td><img src="assets/raw4g.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+          <td>3G</td>
+          <td><img src="assets/raw3G.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+          <td>2G</td>
+          <td><img src="assets/raw2G.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+        </tr>
+      </table>
+      <p>Küsimus 1. RAW: Mitut naabertugijaama mõõdetakse? 3 (2G ja 3G). 2 (4G)
+      </p>
+      <p>Küsimus 2. RAW: Millist tehnilist infot kogutakse teenindava tugijaama kohta, millist naabertugijaamade kohta?
+        Leida võimalikud erinevused kasutatud mobiilside tehnoloogiate vahel.
+      </p>
+      <p>Nii teenindava tugijaama kui ka naabertugijaamade kohta kogutakse infot tugijaama identifitseeritavate koodide,
+        sagedusala ning signaali tugevuse ja kvaliteedi info kohta. Teenindava tugijaama kohta kogutakse rohkem
+        identifitseeritavaid koode ja signaali tugevuse ning kvaliteedi infot kui naabertugijaamade kohta. Mobiilside
+        tehnoloogiate vahel on sarnasteks ainult riik (mcc) ja operaator(mnc). Kõik teised andmed on erinevad. </p>
+      <p>Küsimus 3. RAW: Selgitada välja, mida iga kuvatud arv tähendab, esitada selgitused aruandes.
+      </p>
+      <p>- MCC - Mobile country code </p>
+      <p>- MNC - Mobile network code </p>
+      <p>- Band - The frequency which the given protocol works on.</p>
+      <p>- TAC - Tracking Area Code.</p>
+      <p>- LAC - location area code</p>
+      <p>- CID/UCID/ECI - Cell id 2G/3G/4G</p>
+      <p>- PSC - Primary Scrambling Code</p>
+      <p>- PCI - Physical Cell Identity</p>
+      <p>- eNB - eNodeB known as E-UTRAN Node B or Evolved Node B.</p>
+      <p>- RNC - Radio Network Controller</p>
+      <p>- RSSI - Received Signal Strength</p>
+      <p>- RSRP - Reference Signal Received Power</p>
+      <p>- ASU - Arbitrary Strength Unit</p>
+      <p>- Power - Signal strength in watts</p>
+      <p>- RSRQ - Reference Signal Received Quality</p>
+      <p>- RSSNR - Reference Signal Signal Noise Ratio</p>
+      <p>- TA- Timing Advance</p>
+      <p>
+      </p>
+      <h3>2.4 MAP Mõõtepunkt.</h3>
+      <table>
+        <tr>
+          <th>Tehnoloogia</th>
+          <th>Kuvatõmmis tehnoloogiast</th>
+        </tr>
+        <tr>
+          <td>4G</td>
+          <td><img src="assets/oige4g.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+          <td>3G</td>
+          <td><img src="assets/3Gmootepunkt.jpg?raw=true" width="400px"
+              alt=https://en.wikipedia.org/wiki/Mobile_phone_signal
+              https://wiki.teltonika.lt/view/Mobile_Signal_Strength_Recommendations
+              http://wilysis.com/images/cellinfo/pdf/Network_Cell_Info_Manual_v3_180730.pdf
+              https://en.wikipedia.org/wiki/ENodeB 0"Gauge4G"></td>
+          <td>2G</td>
+          <td><img src="assets/2Gmootepunkt.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+        </tr>
+      </table>
+      <p>Küsimus 1. MAP mõõtepunkt: Milliseid andmeid saab teada mõõtepunkti kohta? Leida võimalikud erinevused kasutatud
+        mobiilside tehnoloogiate vahel. </p>
+      <p>2G:</p>
+      <p>EDGE- mobiilside tehnoloogia</p>
+      <p>24802- maa ja operaatorikood</p>
+      <p>21- asukohapiirkonna kood</p>
+      <p>57302- cell id</p>
+      <p>-59- signaali tugevus</p>
+      <p>koordinaadid</p>
+      <p>mõõtmise kellaaeg</p>
+      <p>3G:</p>
+      <p>HSPA+- mobiilside tehnoloogia</p>
+      <p>24802- maa ja operaatorikood</p>
+      <p>1021- asukohapiirkonna kood</p>
+      <p>13223118- cell id</p>
+      <p>59- psc(id lähestikku asuvate 3G kärgede eristamiseks)</p>
+      <p>-63- signaali tugevus</p>
+      <p>koordinaadid</p>
+      <p>mõõtmise kellaaeg</p>
+      <p>4G:</p>
+      <p>LTE+- mobiilside tehnoloogia</p>
+      <p>24802- maa ja operaatorikood</p>
+      <p>2021- asukohapiirkonna kood</p>
+      <p>256287254- cell id</p>
+      <p>322- pci(id lähestikku asuvate 4G kärgede eristamiseks)</p>
+      <p>-83- signaali tugevus</p>
+      <p>koordinaadid</p>
+      <p>mõõtmise kellaaeg</p>
+      <p>Küsimus 2. MAP mõõtepunkt: Võrrelda kuvatud arve võimsusmõõturi all välja toodud parameetrite väärtustega. </p>
+      <p>Võimsusmõõturi all pole näha maa ja operaatorikoodi (24802). 3G puhul erineb signaalitugevus: võimsusmõõtur
+        näitab -65, kuid mõõtepunktil näitab võimsuseks -63.Ka koordinaadid erinevad natukene 3G ja 2G puhul, kuid
+        teised andmed on samad.</p>
+      <h3>2.5 MAP tugijaam</h3>
+      <table>
+        <tr>
+          <th>Tehnoloogia</th>
+          <th>Kuvatõmmis tehnoloogiast</th>
+        </tr>
+        <tr>
+          <td>4G</td>
+          <td><img src="assets/4GLTE.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+          <td>3G</td>
+          <td><img src="assets/3G_HSPA.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+          <td>2G</td>
+          <td><img src="assets/edge_2g.jpg?raw=true" width="400px"
+              alt=0"Gauge4G"></td>
+        </tr>
+      </table>
+      <p>Küsimus 1. MAP tugijaam: Milliseid andmeid saab teada teenindava tugijaama kohta? Leida võimalikud erinevused
+        kasutatud mobiilside tehnoloogiate vahel. </p>
+      <p>2G:</p>
+      <p>EDGE- mobiilside tehnoloogia</p>
+      <p>21- asukohapiirkonna kood</p>
+      <p>57302- cell id</p>
+      <p>koordinaadid</p>
+      <p>3G:</p>
+      <p>HSPA+- mobiilside tehnoloogia</p>
+      <p>1021- asukohapiirkonna kood</p>
+      <p>13223118- cell id</p>
+      <p>59- psc (id lähestikku asuvate 3G kärgede eristamiseks)</p>
+      <p>koordinaadid</p>
+      <p>4G:</p>
+      <p>LTE+- mobiilside tehnoloogia</p>
+      <p>2021- asukohapiirkonna kood</p>
+      <p>256287254- cell id</p>
+      <p>322- pci(id lähestikku asuvate 4G kärgede eristamiseks)</p>
+      <p>koordinaadid</p>
+      <p>Küsimus 2. MAP tugijaam: Selgitada tugijaamade tähistuses kasutatavate andmete struktuuri (riik, mobiilsidevõrgu
+        operaator, asukohapiirkond, ..., tugijaama number). </p>
+      <p>Esimene number koosneb riigikoodist (MCC) ja mobiilsidevõrgu operaatorist (MNC). Eesti koodiks on 248 ning Elisa
+        koodiks on 2.Järgmine number tähistab võrgu alampiirkonda (LAC). Seejärel tuleb tugijaama number (CID), mis on
+        igal kärjel unikaalne.</p>
+    
+      <h2>3. Ring ümber valitud tugijaama koos andmebaaside salvestamisega. </h2>
+      1. Mõõtmiste asukoht: Riik (kui pole Eesti), maakond, asula: Harjumaa, Mustamäe
+      <br>2. Mõõtmiste algus (kuupäev, kellaaeg) 5.mai kell 9:00
+      <br>&nbsp; Mõõtmiste lõpp (kuupäev, kellaaeg) 6.mai kell 12:30
+      <br>3. Mobiilside võrguteenuse pakkuja (Tele2, Telia, Elisa, ...) Elisa
+      <br>4. Kasutatud võrgutehnoloogia (GSM, UMTS, LTE, ...) EDGE(2G), HSPA+(3G), LTE+(4G)
+      <br>5. Millist transpordivahendit kasutades toimus mõõtmine: rattaga
+      <p>
+    
+      </p>
+      <h3>3.1 Ring ümber valitud tugijaama </h3>
+      <p>Valitud tugijaama kasutatav tehnoloogia: <span style="color: blue">
+          LTE+(4G)
+        </span>
+      </p>
+      <p>Valitud tugijaama indentifikaator: <span style="color: blue">
+          256287254
+        </span></p>
+      <table>
+        <tr>
+          <td>
+            </p>
+          </td>
+          <td>
+    
+            <img style="width: 200px" src="assets/4G_pilt.jpg?raw=true"
+              alt="4G_pilt">
+          </td>
+          <td>
+    
+            <img src="assets/4GLTE.jpg?raw=true" alt="Tugijaama pilt"
+              width="200px">
+    
+          </td>
+        </tr>
+      </table>
+      <p>Lisaks ekraanipildile salvestada ka mõõtmised logifailidena: tugijaamade andmebaas ja mõõtepunktide
+        andmebaas.
+      </p>
+      <hr>
+    
+      <p>Valitud tugijaama indentifikaator: <span style="color: blue">13223118</span></p>
+      <p>Valitud tugijaama kasutatav tehnoloogia: <span style="color: blue">HSPA+(3G)</span></p>
+    
+      <p>
+    
+      </p>
+      <table>
+        <tr>
+          <td>
+            <img src="assets/3G_pilt.jpg?raw=true" alt="3G_pilt"
+              width="200px">
+          </td>
+          <td>
+            <img src="assets/3G_HSPA.jpg?raw=true" alt="3G_pilt"
+              width="200px">
+          </td>
+        </tr>
+        <table />
+        <p>Lisaks ekraanipildile salvestada ka mõõtmised logifailidena: tugijaamade andmebaas ja mõõtepunktide
+          andmebaas.
+        </p>
+        <hr>
+    
+        <p>Valitud tugijaama indentifikaator: <span style="color: blue">57302</span></p>
+        <p>Valitud tugijaama kasutatav tehnoloogia: <span style="color: blue">EDGE(2G)
+          </span></p>
+    
+        <table>
+          <tr>
+            <td>
+              <img src="assets/2G_pilt.jpg?raw=true" alt="2G_pilt"
+                width="200px">
+            </td>
+            <td>
+              <img src="assets/edge_2g.jpg?raw=true" alt="3G_pilt"
+                width="200px">
+            </td>
+          </tr>
+          <table />
+          <hr>
+          <h3>3.2 Andmebaaside andmed</h3>
+    
+          <table>
+            <tr>
+              <td>4G</td>
+              <td><img width="300px"
+                  src="assets/4G_mootepunkt.png?raw=true"
+                  alt="4g 4G_mootepunkt"></td>
+              <td>
+                <img src="assets/4g_tugijaam.png?raw=true" alt="tugijaam"
+                  width="300px">
+              </td>
+            </tr>
+            <tr>
+              <td>3G</td>
+              <td><img width="300px"
+                  src="assets/3g_mootejaam.png?raw=true"
+                  alt="4g 4G_mootepunkt"></td>
+              <td>
+                <img src="assets/3G_tugijaam.png?raw=true" alt="tugijaam"
+                  width="300px">
+              </td>
+            </tr>
+            <tr>
+              <td>2G</td>
+              <td><img width="300px" src="assets/2Gmoote.png?raw=true"
+                  alt="4g 4G_mootepunkt"></td>
+              <td>
+                <img src="assets/2g_tugijaam.png?raw=true" alt="tugijaam"
+                  width="300px">
+              </td>
+            </tr>
+          </table>
+          <p>Küsimus 1. Milliseid andmeid kogutakse tugijaamade andmebaasi? </p>
+          <p style="color: orangered">
+            * lat- laiuskoordinaat
+            * lon- pikkuskoordinaat
+            * mcc- riik
+            * mnc- operaator
+            * lac- asukohapiirkond
+            * cellid- tugijaama id
+            * averageSignalStrength- keskmine signaali tugevus (puudus kõikidel)
+            * range- (puudus kõikidel)
+            * samples- (puudus kõikidel)
+            * changeable- (puudus kõikidel)
+            * radio- mobiilside tehnoloogia
+            * rnc- Radio Network Controller, 3G juurdepääsuvõrgu osa
+            * cid- Cell ID ehk tugijaama identifitseerimiskood (puudus kõikidel)
+            * tac- Tracking Area Code ehk asukohapiirkonna kood
+            * sid- System ID (puudus kõikidel)
+            * nid- Network ID (puudus kõikidel)
+            * bid- Basestation ID (puudus kõikidel)
+          </p>
+          <p>Küsimus 2. Milliseid andmeid kogutakse mõõtepunktide andmebaasi? </p>
+          <p style="color: yellowgreen">
+            * mcc- riik
+            * mnc- operaator
+            * lac- asukohapiirkond
+            * cellid- tugijaama id
+            * lat- laiuskoordinaat
+            * lon- pikkuskoordinaat
+            * signal- signaali tugevus
+            * measured_at- mõõtmise aeg
+            * rating- Rating for the given measurement
+            * speed- telefoni liikumiskiirus
+            * direction- telefoni liikumissuund
+            * act- mobiilside tehnoloogia
+            * ta- Timing Advance (puudus kõikidel)
+            * psc- Primary Scrambling Code ehk kood lähestikku asuvate ja samal sagedusel toimivate 3G tugijaamade
+            üksteisest
+            eristamiseks
+            * tac- Tracking Area Code, 4G võrgu osa (grupp tugijaamasid)
+            * pci- Physical Cell Identity ehk kood lähestikku asuvate ja samal sagedusel toimivate 4G tugijaamade
+            üksteisest
+            eristamiseks
+            * sid- System ID (osa CDMA tugijaama identifitseeritavatest andmetest) (puudus kõikidel)
+            * nid- Network ID (osa CDMA tugijaama identifitseeritavatest andmetest)(puudus kõikidel)
+            * bid- Basestation ID (osa CDMA tugijaama identifitseeritavatest andmetest)(puudus kõikidel)
+          </p>
+          <p>Küsimus 3. Mitu erinevat tugijaama kasutati? Tugijaamade arv mobiilside võrgutehnoloogiate kaupa. </p>
+          <p style="color: darkblue">
+            4G: 2
+          </p>
+          <p style="color: olivedrab">
+            3G: 4
+          </p>
+          <p style="color: slateblue">
+            2G: 3
+          </p>
+          <p>Küsimus 4. Kuidas mõõtepunktide andmebaasist saab teada, et toimus tugijaama vahetus? </p>
+          <p style="color:chocolate">
+            Cell ID väärtuse järgi. Kuna Cell ID on igal tugijaamal erinev, siis kui see muutub, on aru saada, et
+            toimus tugijaama
+            vahetus.
+          </p>
+    
+    
+          <h2>4. Valitud tugijaama katsetulemuste järelanalüüs</h2>
+          <h3>4.1 Valitud tugijaama levikaart</h3>
+          <a href="https://drive.google.com/open?id=1UkEXW-oogIr4IbvVTGDNVdO4zMg6GeAg&usp=sharing">Link kaardi
+            juurde</a>
+          <h3>4.2 Valitud tugijaama teenindusala esitamine Google kaardil</h3>
+          <p>
+            Valisin tugijaamana 4G masti
+          </p>
+          <p>
+            <img src="assets/4gTugijaama4.2.png?raw=true"
+              alt="4G_mootepunkt" width="400px">
+          </p>
+          <p>LISADA põhjendus teenindusala suuruse ja kuju kohta.</p>
+          <p>Tegin mõõtmised Mustamäel, TalTech läheduses ning seetõttu on tugijaamu palju. Selle tulemusel ringi
+            ümber tugijaama tehes esines ka teine tugijaam. Raadius mõõdetud tugijaamal oli kuni 175 meetrit.
+            Tugijaama signaali pindala meenutab siinusfunktsiooni ülemist osa või tihedusfunktsiooni. </p>
+          <!-- <table>
+                    <tr></tr>
+                    <tr></tr>
+                </table> -->
+          <h2>Kasutatud materjalide ja allikate nimekiri</h2>
+          <ul>
+            <a href="https://en.wikipedia.org/wiki/Received_signal_strength_indication">
+              <li>RSSI</li>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/List_of_mobile_codes_by_country">
+              <li>MCC</li>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Location_area_identity">
+              <li>Lac</li>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Radio_Network_Controller">
+              <li>RNC</li>
+            </a>
+            <a href="http://mcc-mnc.com/">
+              <li>MNC</li>
+            </a>
+            <a href="https://www.allacronyms.com/UCID/network">
+              <li>UCID</li>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Mobile_phone_signal#ASU">
+              <li>ASU</li>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Network_Caller_ID">
+              <li>CID</li>
+            </a>
+            <a href="https://www.techopedia.com/definition/6133/band">
+              <li>BAND</li>
+            </a>
+            <a href="http://www.thenetworkencyclopedia.com/entry/primary-site-controller-psc/">
+              <li>PSC</li>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Mobile_phone_signal">
+              <li>
+                Telefoni signal
+              </li>
+            </a>
+            <a href="https://wiki.teltonika.lt/view/Mobile_Signal_Strength_Recommendations
+    ">
+              <li>signaalitugevused</li>
+            </a>
+            <a href="http://wilysis.com/images/cellinfo/pdf/Network_Cell_Info_Manual_v3_180730.pdf
+    ">
+              <li>Cell info ametlik dokumentatisoon</li>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/ENodeB
+    ">
+              <li>eNodeB
+              </li>
+            </a>
+          </ul>
+          <h2>Kokkuvõte ja järeldused</h2>
+    
+          <p>
+            Tegu oli viimase laboriga arvutivõrkude aines ning labori lõpuks oli meel häre, sest rohkem laboreid ei
+            tulegi.
+            Labori raames sain kargel pühapäeva varahommikul ratta selga hüpata ja kolm ringi ümber tugijaamade
+            sõita.
+            Kindlasti andis labor palju juurde, just selle osas, et sain näha, kuidas reaalne sidepidamine käib
+            tugijaama ja
+            telefoni vahel. Midagi mida igapäevaselt võtame kui enesest mõistevana.
+          </p>
+          <p>
+
+    <hr>
+            <style>
+              table,
+              td,
+              th {
+                border: 1px solid gray
+              }
+            </style>
+            <h1>Arvutivõrgud labor 3 Järjestikliides aruanne</h1>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Töö tegijate nimed:</td>
+                </tr>
+                <tr>
+                  <td>Tristan Krass</td>
+                </tr>
+                <tr>
+                  <td>Katarina Kala</td>
+                </tr>
+                <tr>
+                  <td>Töö tegemise kuupäev: Tue Apr 9 11:20:23 2019</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+            
+            </p>
+            <h3>1.1 Sümboli edastamine RS-232C liidesel</h3>
+            <p>
+              Seadistus 300/7/E/2.
+            </p>
+            <p>
+              OMA JOONISEL NÄIDATA, kus asuvad bitijadas start-bitt, paarsusbitt,
+              stopp-bitid ja andmebitid.
+            </p>
+            <p>
+            
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Liikme nimi: Tristan</td>
+                  <td rowspan="2">
+                    <img width="500px" src="https://github.com/tristankrass/Labor3/blob/master/assets/tristan.png?raw=true"
+                      alt="E_täht">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Valitud sümbol: e<br>
+                    Sümboli ASCII bitikood: 01100101<br>
+                    Sümboli ASCII bitikood edastamise järjekorras: 1010011<br>
+                    Signaali "1" nivoo: -7,5V<br>
+                    Signaali "0" nivoo: 8,2V<br>
+                    Aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni: 30,2ms<br>
+                    Mitu bitti selle aja jooksul edastati: 9
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              OMA JOONISEL NÄIDATA, kus asuvad bitijadas start-bitt, paarsusbitt,
+              stopp-bitid ja andmebitid.
+            </p>
+            <p>
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Liikme nimi: Katarina</td>
+                  <td rowspan="2">
+                    <img width="500px" src="https://github.com/tristankrass/Labor3/blob/master/assets/katastart.png?raw=true"
+                      alt="katatäht">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Valitud sümbol: t<br>
+                    Sümboli ASCII kood: 01110100<br>
+                    Sümboli ASCII bitikood edastamise järjekorras: 0010111<br>
+                    Signaali "1" nivoo: -7,5V<br>
+                    Signaali "0" nivoo: 8,2V<br>
+                    Aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni: 30,2ms<br>
+                    Mitu bitti selle aja jooksul edastati: 9
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <p>
+              Edastuskiirus (bit/s):<br>
+              ARVUTADA EDASTUSKIIRUS!
+            </p>
+            <p style="color: orange">
+              9 / 30.2 * 1000 = 298 (bit/s)
+            </p>
+            <p>
+            </p>
+            <h4>1.2 Paarsuskontroll</h4>
+            <p>Seadistus 300/7/O/2.
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <td><b>Mis muutus, kui paarsuskontrolli viisiks seada Odd:</b>
+                    <br>
+                    paarsusbiti väärtus muutus (enne oli väärtus 0 nüüd on 1)
+                  </td>
+                  <td>
+                    <img width="500px" src="https://github.com/tristankrass/Labor3/blob/master/assets/paarsuskontrol.png?raw=true"
+                      alt="paarsuskontroll">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h3>2.1 Sümboli edastus nullmodemiga</h3>
+            <p>
+              Seadistus 9600/7/N/2.
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    Valitud sümbol: t<br>
+                    Sümboli ASCII kahendkood edastamise järjekorras: 0010111<br>
+                    Aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni: 0.526 - (-0.002) = 0.528<br>
+                    Mitu bitti selle aja jooksul edastati: 5
+                  </td>
+                  <td>
+                    <img width="500px" src="https://github.com/tristankrass/Labor3/blob/master/assets/nullmodem.png?raw=true"
+                      alt="null modem">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <p>
+              Edastuskiirus (bit/s):<br>
+              ARVUTADA EDASTUSKIIRUS!</p>
+            <p style="color: blue">
+              5 / 0.528 * 1000 = 9470 (bit / s)
+            </p>
+            <h3>2.2 Faili edastus arvutite vahel järjestikliidese kaudu.</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Edastuskiirus 300 bit/s (lisa makro tulemused)</td>
+                  <td>6sekundit</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <img src="https://github.com/tristankrass/Labor3/blob/master/assets/makro.png?raw=true" width="500px"
+                      alt="makro">
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td>Mõõdetud aeg faili saatmise algusest kuni faili kohalejõudmise
+                    lõpuni teises arvutis</td>
+                  <td>52 sekundit</td>
+                </tr>
+                <tr>
+                  <td>
+                    Võrrelda saadetava faili sisu ja teise arvutisse saabunud faili
+                    sisu</td>
+                  <td>Täpitähti ei ole saabunud failis näha</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <img width="500px" src="https://github.com/tristankrass/Labor3/blob/master/assets/teraterm.png?raw=true"
+                      alt="teraterm">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <p>
+              Aruande vormistamisel leida:
+              <br>
+              1) bitikiirus faili edastamisel makro tulemutest
+              <br>
+            </p>
+            <p style="color: green">
+              Saadeti 1359 baiti = 1359 * 8 = 10872 bitti
+            </p>
+            <p style="color: green">
+              Edastuskiirus ühe sekundi jooksul: 10872 / 6 = 1812 (bit / s)
+            </p>
+            2) bitikiirus järjestikliidese ja modemite kaudu
+            moodustatud faili ülekande kanalis. Aruandes tuua ära lahenduskäik.
+            <p style="color: goldenrod">
+              10872 / 52 = 209 (bit / s)
+            </p>
+            <p>
+              3) Kuna sidekanal on seadistatud 7-bitise sümboli edastuseks,
+              siis UTF-8 kodeeringus esitatud faili suurus on antud sümbolites
+              (diakriitilised sümbolid nn "täpitähed" on UTF-8 kodeeringus mitmebaidilise esitusega).
+              Hinnata, mitme sümboli võrra oleks vastuvõtva poole ekraanil sümbolite arv väiksem,
+              kui sidekanalis kasutatakse ülekandel 8-bitist sümbolit.
+              (lugeda need diakriitilised sümbolid kokku).
+            
+            </p>
+            <p style="color: skyblue">
+              7 - bitiseid sümboleid: 30
+            </p>
+            <p style="color: skyblue">
+              diakriitilised sümbolid on UTF-8 kodeeringus 2-baidilise esitusega.
+            </p>
+            <p style="color: skyblue">
+              8 - bitiseid sümboleid: 30 / 2 = 15
+            </p>
+            <p style="color: skyblue">
+              Vastus: vastuvõtva poole ekraanil oleks 15 sümbolit.
+            </p>
+            4)Arvutada antud suurusega faili (faili suurus on antud baitides)
+            teoreetiline edastamise aeg seadistusel 300/7/E/2.
+            <p style="color: palevioletred">
+              1359 * 8 = 10872 bitti
+            </p>
+            <p style="color: red">
+              Parandus: Teen bitid sümboliteks
+            </p>
+            <p>
+              10872 * 11 = 119592
+            </p>
+            <p style="color: palevioletred">
+              119592 / 7 = 17085 bitti
+            </p>
+            
+            <p style="color: palevioletred">
+              17085 / 300 = 56.95 s
+            </p>
+            
+            5) Arvutada antud faili suuruse teksti
+            (oletame, et faili suurus on antud 7-bitistes sümbolites)
+            teoreetiline edastamise aeg seadistusel 300/7/E/2.
+            <p style="color: plum">
+              Bittide arv: 1 (start-bitt) + 7 (andmebitid) + 1(paarsusbit) + 2(stopp-bitid) = 11 bitti
+              <p>
+                1359 baiti = 1359 * 8 = 10872 bitti
+              </p>
+              <p>
+                10872 / 7 = 1553 bitti
+              </p>
+              andmete edastamise aeg: 1553 / 300 = 5.18s
+            </p>
+            
+            <h2>4. Individuaalülesanne</h2>
+            <p>Matriklinumber: 179302</p>
+            <p style="color: salmon">Korrutan oma matriklinumbri 27ga ehk 179302 * 27 = 4841154 bitti</p>
+            </p>
+            <p style="color: salmon">Bittide edastus ühe korraga: 1 + 7 + 1 + 2 = 11(bitti) [(start+andme+paarsus+2stoppbitt) ]
+            </p>
+            <p style="color: salmon"> Andmepakettide arv on: 4841154 / 7 = 691594 </p>
+            <p style="color: salmon">
+              Liinil edastatakse: 691594 * 11 = 7607534(bitti)
+            </p>
+            <p style="color: salmon">
+              Edastuseks kuluv aeg: 7607534 / 1 200 = 6339.6 (s)
+            </p>
+            
+            <h2>Kokkuvõte ja järeldused</h2>
+            <p style="color:chocolate">
+              Tegu oli toreda laboriga. Sain uurida graafikuid, mis kajastasid start-bitti, paarsusbitti, stopp-bitte ja
+              andmebitte.
+            </p>
+    <hr>
+    <!-- Labor 4 -->
+            <h1>Arvutivõrgud labor 4 Traadita kohtvõrk WLAN aruanne</h1>
+            
+            <table border="1" cellpadding="4" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td>Töö tegijate nimed:</td>
+                </tr>
+                <tr>
+                  <td>Tristan Krass</td>
+                </tr>
+                <tr>
+                  <td>Katarina Kala</td>
+                </tr>
+                <tr>
+                  <td>Töö tegemise kuupäev: Tue Apr 23 13:43:02 2019</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h2>1. WLAN tugijaama seadistamine</h2>
+            <h3>WLAN tugijaama seadistamise IP osa</h3>
+            <table border="1">
+              <tbody>
+                <tr>
+                  <td>Variant nr</td>
+                  <td>Võrgu aadress</td>
+                  <td>Maski võrguosa bittide arv</td>
+                  <td>Võrgus seadmetele antavate aadresside max arv</td>
+                  <td>võrgumask kümnendkujul</td>
+                  <td>Esimene kasutatav aadress - <br>tugijaama IP aadress</td>
+                  <td>Teine kasutatav aadress - <br>esimene DHCPga jagatav aadress</td>
+                  <td>Viimane kasutatav aadress - <br>viimane DHCPga jagatav aadress</td>
+                  <td>Aadressruumi viimane aadress, levisaade (<i>broadcast</i>)</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>172.19.11.152</td>
+                  <td>29</td>
+                  <td>6</td>
+                  <td>255.255.255.248</td>
+                  <td>172.19.11.153</td>
+                  <td>172.19.11.154</td>
+                  <td>172.19.11.158</td>
+                  <td>172.19.11.159</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+            </p>
+            <h3>WLAN tugijaama seadistamise WLAN osa</h3>
+            <table border="1" cellpadding="4" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td><small>2,4 GHz võrgu nimi</small><br>
+                    katarina</td>
+                  <td><small>2,4 GHz kanali number</small><br>
+                    1</td>
+                </tr>
+                <tr>
+                  <td><small>5 GHz võrgu nimi</small><br>
+                    katarina5G</td>
+                  <td><small>5 GHz kanali number</small><br>
+                    48</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            
+            <h3>Labori sisevõrgu skeem</h3>
+            <img src="https://github.com/tristankrass/labor4/blob/master/assets/skeem.jpg?raw=true" alt="skeem" height="500px"
+              width="500px">
+            <h2>2. WLAN spektri mõõtmine</h2>
+            <h3>2,4 GHz WLAN võrk</h3>
+            <table border="1" cellpadding="4" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td>Võrk</td>
+                  <td>WLAN kanal ja kesksagedus</td>
+                  <td>Ekraanil näidatud sagedusriba kesksagedus</td>
+                  <td>Ekraanil näidatud sagedusriba laius</td>
+                  <td>Mõõdetud spektri alumine sagedus</td>
+                  <td>Mõõdetud spektri ülemine sagedus</td>
+                  <td>Mõõdetud spektri laius</td>
+                  <td>Signaali võimsus</td>
+                  <td>Müra võimsus</td>
+                </tr>
+                <tr>
+                  <td>2,4 GHz 802.11g</td>
+                  <td>1</td>
+                  <td>2412 Mhz</td>
+                  <td>100 Mhz</td>
+                  <td>2402 MHz</td>
+                  <td>2422MHz</td>
+                  <td>20Mhz</td>
+                  <td>-31.5 dBm</td>
+                  <td>-66.5 dBm</td>
+                </tr>
+                <tr>
+                  <td colspan="9">
+                    <img src="https://github.com/tristankrass/labor4/blob/master/assets/spekter2G.png?raw=true"
+                      alt="spekter_2.4GHz">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              Sidekanali läbilaskevõime arvutused 2,4 GHz WLAN võrgus.
+            </p>
+            <p>
+              LISA SIIA SIDEKANALI LÄBILASKEVÕIME ARVUTUSED 2,4 GHz VÕRGU KOHTA!
+            </p>
+            <p>
+              R = W * log_2(1 + S/N)
+            </p>
+            <p>
+              1) S[mW] = 10 ^ S[dBm] / 10 = 10 ^ -31.5 / 10 = 10 ^ -3.15 = 708 * 10^-6 mW
+            </p>
+            <p>
+              2) N[mW] = 10^N[dBm] / 10 = 10^-66.5/10 = 10^-6.65 = 224 * 10^-9 mW
+            </p>
+            <p>
+              3) S/N [kordades] = 708 * 10^-6 / 224 * 10^-9 = 3161
+            </p>
+            <p>
+              R = 20 * log_2(1 + 3161) = 232.5 Mbit/s
+            </p>
+            <h3>5 GHz WLAN võrk</h3>
+            <p></p>
+            <table border="1" cellpadding="4" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td>Võrk</td>
+                  <td>WLAN kanal ja kesksagedus</td>
+                  <td>Ekraanil näidatud sagedusriba kesksagedus</td>
+                  <td>Ekraanil näidatud sagedusriba laius</td>
+                  <td>Mõõdetud spektri alumine sagedus</td>
+                  <td>Mõõdetud spektri ülemine sagedus</td>
+                  <td>Mõõdetud spektri laius</td>
+                  <td>Signaali võimsus</td>
+                  <td>Müra võimsus</td>
+                </tr>
+                <tr>
+                  <td>5 GHz 802.11n</td>
+                  <td>48</td>
+                  <td>5240 Mhz</td>
+                  <td>100 Mhz</td>
+                  <td>5210 Mhz</td>
+                  <td>5270 Mhz</td>
+                  <td>60 Mhz</td>
+                  <td>-49.1 dBm</td>
+                  <td>-57.1 dBm</td>
+                </tr>
+                <tr>
+                  <td colspan="9">
+                    <img src="https://github.com/tristankrass/labor4/blob/master/assets/spekter5G.png?raw=true" alt="spekter5G">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              Sidekanali läbilaskevõime arvutused 5 GHz WLAN võrgus.
+            </p>
+            <p>
+              LISA SIIA SIDEKANALI LÄBILASKEVÕIME ARVUTUSED 5GHz VÕRGU KOHTA!
+            </p>
+            <p>
+              1) S[mW] = 10 ^ S[dBm] / 10 = 10 ^ -49.1 / 10 = 10 ^ -4.91 = 0.0000123 mW = 123 * 10^-7 mW
+            </p>
+            <p>2) N[mW] = 10 ^ -57.1 / 10 = 0.00000195 mW = 195 * 10^-8 mW
+            </p>
+            <p>
+              3) S / N [kordades] = 123 * 10^-7 / 195 * 10^-8 = 6.3
+            </p>
+            <p>
+              R = 40 * log_2(1+ 6.3) = 114.72 Mbit/s
+            </p>
+            <h2>3. WLAN võrgu uurimine</h2>
+            <h3>Netsh</h3>
+            <table border="1" cellpadding="4" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td colspan="2"><small>2,4 GHz võrk</small> katarina</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <pre>
+                                    There is 1 interface on the system:
+            
+                                    Name : Wi-Fi
+                                    Description : ASUS USB-AC56 802.11ac Wireless USB Adapter
+                                    GUID : 88cb68b6-5a48-4175-b5f2-0c95c265251c
+                                    Physical address : f0:79:59:e8:ba:eb
+                                    State : connected
+                                    SSID : katarina
+                                    BSSID : 08:62:66:8d:0e:80
+                                    Network type : Infrastructure
+                                    Radio type : 802.11g
+                                    Authentication : WPA2-Personal
+                                    Cipher : CCMP
+                                    Connection mode : Profile
+                                    Channel : 1
+                                    Receive rate (Mbps) : 54
+                                    Transmit rate (Mbps) : 54
+                                    Signal : 100%
+                                    Profile : katarina
+            
+                                    Hosted network status : Not available
+            
+                                </pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Millise standardi WLAN võrguga on arvuti ühendatud?</td>
+                  <td>802.11g</td>
+                </tr>
+                <tr>
+                  <td>Milline on lubatud laadimiskiirus üles ja alla?</td>
+                  <td>54 Mb/s (alla); 54 Mb/s (üles)</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><small>5 GHz võrk</small> katarina5G</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <pre>
+                                    There is 1 interface on the system:
+            
+                                    Name : Wi-Fi
+                                    Description : ASUS USB-AC56 802.11ac Wireless USB Adapter
+                                    GUID : 88cb68b6-5a48-4175-b5f2-0c95c265251c
+                                    Physical address : f0:79:59:e8:ba:eb
+                                    State : connected
+                                    SSID : katarina5G
+                                    BSSID : 08:62:66:8d:0e:84
+                                    Network type : Infrastructure
+                                    Radio type : 802.11n
+                                    Authentication : WPA2-Personal
+                                    Cipher : CCMP
+                                    Connection mode : Profile
+                                    Channel : 48
+                                    Receive rate (Mbps) : 300
+                                    Transmit rate (Mbps) : 300
+                                    Signal : 100%
+                                    Profile : katarina5G
+            
+                                    Hosted network status : Not available
+            
+            </pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mis tüüpi WLAN võrguga on arvuti ühendatud?</td>
+                  <td>802.11n</td>
+                </tr>
+                <tr>
+                  <td>Milline on lubatud laadimiskiirus üles ja alla?</td>
+                  <td>300 Mb/s (alla); 300 Mb/s (üles)</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            
+            <h3>Programmi <font face="Courier New, monospace"><i>inSSIDer 3</i></font> ekraanipilt</h3>
+            <p style="color: red">NB! Vahetasime selle ülesande jaoks töökohti.</p>
+            <img src="https://github.com/tristankrass/labor4/blob/master/assets/kolmasyll.PNG?raw=true" alt="inSSIDer">
+            <p>
+            
+            </p>
+            <h3>Küsimused:</h3>
+            1. Millised kanalid on hõivatud Teie võrkude spektrite poolt?<br>
+            1-3 (2.4 GHz), 36-42 (5 GHz)
+            
+            <p>
+              2. Kui suurt andmeedastuskiirust teoreetiliselt on võimalik kasutada Teie WLAN võrkudes?<br>
+              54 (2.4GHz), 450 (5 GHz)
+            
+            </p>
+            <p>
+              3. Selgitada <font face="Courier New, monospace"><i>inSSIDer</i></font>'i tabelis näidatavate MAC aadresside
+              tähendust.<br>
+              Mis võrgud veel on, mis kanalitel nad töötavad ja kui suurt andmeeedastuskiirust need võimaldavad. Saab vaadata
+              ka protokolli, mis sagedust nad kasutavad.
+            
+            </p>
+            <p>
+              4. Millised raadiokanalid on kasutuses ja kus on veel vaba ruumi uute võrkude jaoks?<br>
+              2.4 GHz on kõik kanalid kasutuses. 5GHz on vabad 50-64; 100-110; 126-138; 140-165
+            
+            </p>
+            <p>
+              5. Milliseid raadiokanaleid võiks soovitada Teie võrkudele? Lisada põhjendus.<br>
+              1-3 (2.4GHz); 50-56 (5GHz)
+            
+            
+            </p>
+            <h2>4. WLAN võrgu kiiruste uurimine</h2>
+            <p>
+              802.11g (2,4 GHz) võrk.
+              <br>
+              <img src="https://github.com/tristankrass/labor4/blob/master/assets/Graafik2.4G.PNG?raw=true" alt="graafik2.4G">
+              <br>
+              SSID: katarina
+              <br>
+              Hinnang TCP katsetulemustele:<br>
+              Kõige aeglasem. Aeglaseem 5 GHz võrgust ja UDP. Teoreetilisest kiirusest on see peaaegu poole aelglasem.
+              <br>
+              Hinnang UDP katsetulemustele:<br>
+              Udp on kiirem kui TCP, kuid UDP protokoll ei kontrolli, kas kohale jõudnud sõnum oli vigane või mitte.
+            </p>
+            <p>
+              802.11n (5 GHz) võrk.
+              <br>
+              <img src="https://github.com/tristankrass/labor4/blob/master/assets/Graafik5G.PNG?raw=true" alt="Graafik5G">
+              <br>
+              SSID: katarina5G
+              <br>
+              Hinnang TCP katsetulemustele:<br>
+              Selle võrgu kiirus on tunduvalt kiirem, kui 2,4 GHz sagedusel töötavad võrgud. Sellegipoolest on see aeglasem
+              kui teoreetiline kiirus, milleks on 300 Mb/s.
+              <br>
+              Hinnang UDP katsetulemustele:<br>
+              Tegu on kõige kiirema võrguga. See on kiirem kui TCP ühendus, kuid kiiruse tulemusel väheneb ka turvalisus ehk
+              UDP protokoll pole hea sensitiivse informatsiooni saatmiseks.
+            </p>
+            <p>
+            
+              Milline oli mõlema võrgu (802.11g ja 802.11n) korral maksimaalne saavutatud kiirus mõlema protokolli (TCP ja
+              UDP) korral?</p>
+            <p style="color: blue">
+              802.11g korral oli allalaadimiskiirus TCP:24,89 Mb/s ja üleslaadimiskiirus 22,19 Mb/s
+            </p>
+            <p style="color: blue">
+              802.11g korral oli allalaadimiskiirus UDP:29,29 Mb/s ja üleslaadimiskiirus 25,14 Mb/s
+            </p>
+            
+            <p style="color: blue">
+              802.11n korral oli allalaadimiskiirus TCP: 230,05 Mb/s ja üleslaadimiskiirus 176,19 Mb/s
+            </p>
+            
+            <p style="color: blue">
+              802.11n korral oli allalaadimiskiirus UDP: 213,33 Mb/s ja üleslaadimiskiirus 238,69 Mb/s
+            </p>
+            
+            <h2>5. Individuaalülesanne</h2>
+            <p>
+              KIRJUTA INDIVIDUAALÜLESANDE LAHENDUS SIIA!
+            </p>
+            <div>
+              <table>
+                <caption>Algandmed</caption>
+                <tr>
+                  <td>WLAN sagedus f</td>
+                  <td>2462 MHz</td>
+                </tr>
+                <tr>
+                  <td>Mõõdetud võimsus vastuvõtja sisendis Pv </td>
+                  <td>9,21∙10-7 mW</td>
+                </tr>
+                <tr>
+                  <td>Saatja antenni võimendus Gs</td>
+                  <td>3 dBi</td>
+                </tr>
+            
+                <tr>
+                  <td>Saatja ja vastuvõtja vaheline kaugus d</td>
+                  <td>160 m
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td>Vastuvõtja antenni võimendus Gv</td>
+                  <td>2 dBi</td>
+                </tr>
+            
+              </table>
+            </div>
+            1004.8 / .053571429
+            <div>
+              <p>ülesande LAHENDUS</p>
+              <p>Pv = Ps + Gs + Gv - FSL - L</p>
+              <p>Ps = Pv - Gs - Gv + FSL + L </p>
+              <p>Muid kadusid ei arvestata, seega valem näeb välja selline: </p>
+              <p style="color: skyblue">Ps = Gs + Gv - FSL - Pv</p>
+              <p>
+                Arvutan vaba ruumi kao
+              </p>
+              <p>FSL = (4 &pi; d / &lambda;)^2</p>
+              <p>
+                &lambda; = c / f = 3∙10^8 / 2462000000 = 0.121852153
+              </p>
+              <p>
+                FSL = (4 &pi; * 160 / 0.121852153)^2 = 17016619.8345041
+              </p>
+              <p>
+                Mul on vaja saada logartimilist ühikut, seega teisendan:
+              </p>
+              <p>
+                10 * log(FSL) = 10 * log(17016619.8345041) = 72.308 dB
+              </p>
+              <p>
+                Lisaks on vaja Friisi valemis mul vastvõtja sisendvõimust logartimilistes ühikutes, mille saan teisendades:
+              </p>
+              <p>Pv = 9,21∙10-7 mW => 10 * log(9,21∙10-7 mW) =
+                -60.357 dBm
+              </p>
+              <p>Viimaks leian saatja sisendvõimsus</p>
+              <p>Ps = Pv - Gs - Gv + FSL =
+                -60.357 - 2 - 3 + 72.308 = 6.951 dBm
+              </p>
+              <p>
+                Sama asi lineaarsetes ühikutes oleks:
+              </p>
+              <p>
+                P_s [mW] = 10 ^ 6.951 / 10 =4.955 mW
+              </p>
+              <p style="color: red">
+                Teen kontrolli, kas vastus klapib.
+              </p>
+            
+              <p>
+                Pv = Ps + Gs + Gv - FSL - L
+                VP = -60.357
+                PP = 6.951 + 2 + 3 - 72.308 - 0 = -60.357
+                VP == PP
+              </p>
+            </div>
+            
+            <h2>Kokkuvõte ja järeldused</h2>
+            
+            <p>
+              Laboritöö käigus oli võimalik seadistada kahel erineval sagedusel wifi võrke. Uurida erinevatel sagedustel
+              töötavate wifi võrkude kiiruiseid.
+              Võrgu IP-de ja maskide määramine aitas kinnitada esimeses pooles õpitut.
+              Ilmnesid selged vahed võrgu teoreetilise ja tegeliku läbilaske võime kohta.
+              Rakendusega InSSIDer oli selgelt näha, kuidas erinevatele kanalitele võrkude kattuvusi.
+            </p>
+            <p>
+            
+            </p>
+  </body>
+</html>
