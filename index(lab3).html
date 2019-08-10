@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Labor 3 aruanne</title>
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid gray
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Arvutivõrgud labor 3 Järjestikliides aruanne</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Töö tegijate nimed:</td>
+            </tr>
+            <tr>
+                <td>Tristan Krass</td>
+            </tr>
+            <tr>
+                <td>Katarina Kala</td>
+            </tr>
+            <tr>
+                <td>Töö tegemise kuupäev: Tue Apr 9 11:20:23 2019</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+
+    </p>
+    <h3>1.1 Sümboli edastamine RS-232C liidesel</h3>
+    <p>
+        Seadistus 300/7/E/2.
+    </p>
+    <p>
+        OMA JOONISEL NÄIDATA, kus asuvad bitijadas start-bitt, paarsusbitt,
+        stopp-bitid ja andmebitid.
+    </p>
+    <p>
+
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td>Liikme nimi: Tristan</td>
+                <td rowspan="2">
+                    <img width="500px"
+                        src="https://github.com/tristankrass/Labor3/blob/master/assets/tristan.png?raw=true"
+                        alt="E_täht">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Valitud sümbol: e<br>
+                    Sümboli ASCII bitikood: 01100101<br>
+                    Sümboli ASCII bitikood edastamise järjekorras: 1010011<br>
+                    Signaali "1" nivoo: -7,5V<br>
+                    Signaali "0" nivoo: 8,2V<br>
+                    Aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni: 30,2ms<br>
+                    Mitu bitti selle aja jooksul edastati: 9
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        OMA JOONISEL NÄIDATA, kus asuvad bitijadas start-bitt, paarsusbitt,
+        stopp-bitid ja andmebitid.
+    </p>
+    <p>
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td>Liikme nimi: Katarina</td>
+                <td rowspan="2">
+                    <img width="500px"
+                        src="https://github.com/tristankrass/Labor3/blob/master/assets/katastart.png?raw=true"
+                        alt="katatäht">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Valitud sümbol: t<br>
+                    Sümboli ASCII kood: 01110100<br>
+                    Sümboli ASCII bitikood edastamise järjekorras: 0010111<br>
+                    Signaali "1" nivoo: -7,5V<br>
+                    Signaali "0" nivoo: 8,2V<br>
+                    Aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni: 30,2ms<br>
+                    Mitu bitti selle aja jooksul edastati: 9
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        Edastuskiirus (bit/s):<br>
+        ARVUTADA EDASTUSKIIRUS!
+    </p>
+    <p style="color: orange">
+        9 / 30.2 * 1000 = 298 (bit/s)
+    </p>
+    <p>
+    </p>
+    <h4>1.2 Paarsuskontroll</h4>
+    <p>Seadistus 300/7/O/2.
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td><b>Mis muutus, kui paarsuskontrolli viisiks seada Odd:</b>
+                    <br>
+                    paarsusbiti väärtus muutus (enne oli väärtus 0 nüüd on 1)
+                </td>
+                <td>
+                    <img width="500px"
+                        src="https://github.com/tristankrass/Labor3/blob/master/assets/paarsuskontrol.png?raw=true"
+                        alt="paarsuskontroll">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>2.1 Sümboli edastus nullmodemiga</h3>
+    <p>
+        Seadistus 9600/7/N/2.
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    Valitud sümbol: t<br>
+                    Sümboli ASCII kahendkood edastamise järjekorras: 0010111<br>
+                    Aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni: 0.526 - (-0.002) = 0.528<br>
+                    Mitu bitti selle aja jooksul edastati: 5
+                </td>
+                <td>
+                    <img width="500px"
+                        src="https://github.com/tristankrass/Labor3/blob/master/assets/nullmodem.png?raw=true"
+                        alt="null modem">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        Edastuskiirus (bit/s):<br>
+        ARVUTADA EDASTUSKIIRUS!</p>
+    <p style="color: blue">
+        5 / 0.528 * 1000 = 9470 (bit / s)
+    </p>
+    <h3>2.2 Faili edastus arvutite vahel järjestikliidese kaudu.</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>Edastuskiirus 300 bit/s (lisa makro tulemused)</td>
+                <td>6sekundit</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="https://github.com/tristankrass/Labor3/blob/master/assets/makro.png?raw=true"
+                        width="500px" alt="makro">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mõõdetud aeg faili saatmise algusest kuni faili kohalejõudmise
+                    lõpuni teises arvutis</td>
+                <td>52 sekundit</td>
+            </tr>
+            <tr>
+                <td>
+                    Võrrelda saadetava faili sisu ja teise arvutisse saabunud faili
+                    sisu</td>
+                <td>Täpitähti ei ole saabunud failis näha</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img width="500px"
+                        src="https://github.com/tristankrass/Labor3/blob/master/assets/teraterm.png?raw=true"
+                        alt="teraterm">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p>
+        Aruande vormistamisel leida:
+        <br>
+        1) bitikiirus faili edastamisel makro tulemutest
+        <br>
+    </p>
+    <p style="color: green">
+        Saadeti 1359 baiti = 1359 * 8 = 10872 bitti
+    </p>
+    <p style="color: green">
+        Edastuskiirus ühe sekundi jooksul: 10872 / 6 = 1812 (bit / s)
+    </p>
+    2) bitikiirus järjestikliidese ja modemite kaudu
+    moodustatud faili ülekande kanalis. Aruandes tuua ära lahenduskäik.
+    <p style="color: goldenrod">
+        10872 / 52 = 209 (bit / s)
+    </p>
+    <p>
+        3) Kuna sidekanal on seadistatud 7-bitise sümboli edastuseks,
+        siis UTF-8 kodeeringus esitatud faili suurus on antud sümbolites
+        (diakriitilised sümbolid nn "täpitähed" on UTF-8 kodeeringus mitmebaidilise esitusega).
+        Hinnata, mitme sümboli võrra oleks vastuvõtva poole ekraanil sümbolite arv väiksem,
+        kui sidekanalis kasutatakse ülekandel 8-bitist sümbolit.
+        (lugeda need diakriitilised sümbolid kokku).
+
+    </p>
+    <p style="color: skyblue">
+        7 - bitiseid sümboleid: 30
+    </p>
+    <p style="color: skyblue">
+        diakriitilised sümbolid on UTF-8 kodeeringus 2-baidilise esitusega.
+    </p>
+    <p style="color: skyblue">
+        8 - bitiseid sümboleid: 30 / 2 = 15
+    </p>
+    <p style="color: skyblue">
+        Vastus: vastuvõtva poole ekraanil oleks 15 sümbolit.
+    </p>
+    4)Arvutada antud suurusega faili (faili suurus on antud baitides)
+    teoreetiline edastamise aeg seadistusel 300/7/E/2.
+    <p style="color: palevioletred">
+        1359 * 8 = 10872 bitti
+    </p>
+    <p style="color: red">
+        Parandus: Teen bitid sümboliteks
+    </p>
+    <p>
+        10872 * 11 = 119592
+    </p>
+    <p style="color: palevioletred">
+        119592 / 7 = 17085 bitti
+    </p>
+
+    <p style="color: palevioletred">
+        17085 / 300 = 56.95 s
+    </p>
+
+    5) Arvutada antud faili suuruse teksti
+    (oletame, et faili suurus on antud 7-bitistes sümbolites)
+    teoreetiline edastamise aeg seadistusel 300/7/E/2.
+    <p style="color: plum">
+        Bittide arv: 1 (start-bitt) + 7 (andmebitid) + 1(paarsusbit) + 2(stopp-bitid) = 11 bitti
+        <p>
+            1359 baiti = 1359 * 8 = 10872 bitti
+        </p>
+        <p>
+            10872 / 7 = 1553 bitti
+        </p>
+        andmete edastamise aeg: 1553 / 300 = 5.18s
+    </p>
+
+    <h2>4. Individuaalülesanne</h2>
+    <p>Matriklinumber: 179302</p>
+    <p style="color: salmon">Korrutan oma matriklinumbri 27ga ehk 179302 * 27 = 4841154 bitti</p>
+    </p>
+    <p style="color: salmon">Bittide edastus ühe korraga: 1 + 7 + 1 + 2 = 11(bitti) [(start+andme+paarsus+2stoppbitt) ]
+    </p>
+    <p style="color: salmon"> Andmepakettide arv on: 4841154 / 7 = 691594 </p>
+    <p style="color: salmon">
+        Liinil edastatakse: 691594 * 11 = 7607534(bitti)
+    </p>
+    <p style="color: salmon">
+        Edastuseks kuluv aeg: 7607534 / 1 200 = 6339.6 (s)
+    </p>
+
+    <h2>Kokkuvõte ja järeldused</h2>
+    <p style="color:chocolate">
+        Tegu oli toreda laboriga. Sain uurida graafikuid, mis kajastasid start-bitti, paarsusbitti, stopp-bitte ja
+        andmebitte.
+    </p>
+</body>
+
+</html>
